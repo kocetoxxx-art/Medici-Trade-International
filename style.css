@@ -155,7 +155,7 @@ rgba(10,12,16,0.92) 100%);
 /* Container managing the centered, wide presentation of logo3.png */
 .hero-logo3-container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto 2rem;
     padding: 0 1rem;
     display: flex;
