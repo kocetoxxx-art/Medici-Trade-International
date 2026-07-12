@@ -178,7 +178,7 @@ rgba(10,12,16,0.92) 100%);
 }
 
 .hero-brand-title-img {
-    max-width: 350px; /* Уголемяваме логото тук */
+    max-width: 1350px; /* Уголемяваме логото тук */
     width: 100%;
     height: auto;
     object-fit: contain;
