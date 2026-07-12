@@ -155,7 +155,7 @@ rgba(10,12,16,0.92) 100%);
 /* Container managing the centered, wide presentation of logo3.png */
 .hero-logo3-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto 2rem;
     padding: 0 1rem;
     display: flex;
@@ -173,7 +173,7 @@ rgba(10,12,16,0.92) 100%);
         opacity: 1;
         transform: scale(1);
         /* Златен ореол (сияние) */
-        filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.8));
+        filter: drop-shadow(0 0 40px rgba(212, 175, 55, 0.6));
     }
 }
 
