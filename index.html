@@ -262,7 +262,7 @@ class="info-value">office@medicitradeinternational.com</div>
                     </div>
                 </div>
 
-               <form class="intake-form" action="https://formspree.io/f/xzdnpkok" method="POST">
+               <form id="my-form" class="intake-form" action="https://formspree.io/f/xzdnpkok" method="POST">
     <div class="form-group">
         <label for="company-name">Company Name</label>
         <input type="text" id="company-name" name="Company Name" required placeholder="Your corporate legal entity">
@@ -286,6 +286,7 @@ class="info-value">office@medicitradeinternational.com</div>
     </div>
     <button type="submit" class="btn-submit">Submit Formal Inquiry</button>
 </form>
+                <div id="status" style="margin-top: 15px; font-weight: bold; color: #2e7d32;"></div>
             </div>
         </div>
     </section>
@@ -300,6 +301,30 @@ Operating strictly under ICC standards.</p>
         </div>
     </footer>
 
+<script>
+  var form = document.getElementById("my-form");
+  var status = document.getElementById("status");
+  
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "Thank you! Your inquiry has been submitted successfully.";
+        form.reset();
+      } else {
+        status.innerHTML = "Oops! There was a problem submitting your form.";
+      }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form.";
+    });
+  }
+  form.addEventListener("submit", handleSubmit);
+</script>
 </body>
 </html>
 
