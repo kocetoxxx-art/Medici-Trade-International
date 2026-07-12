@@ -162,11 +162,28 @@ rgba(10,12,16,0.92) 100%);
     justify-content: center;
     align-items: center;
 }
+/* --- АНИМИРАНО ЛОГО СЪС ЗЛАТЕН БЛЯСЪК --- */
+@keyframes fadeInGlow {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+        filter: drop-shadow(0 0 0 rgba(212, 175, 55, 0));
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        /* Златен ореол (сияние) */
+        filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.8));
+    }
+}
+
 .hero-brand-title-img {
+    max-width: 350px; /* Уголемяваме логото тук */
     width: 100%;
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.6));
+    /* Прилагаме анимацията */
+    animation: fadeInGlow 2s ease-out forwards;
 }
 
 .hero-subtitle-business {
