@@ -262,39 +262,30 @@ class="info-value">office@medicitradeinternational.com</div>
                     </div>
                 </div>
 
-                <form class="intake-form" action="#" method="POST">
-                    <div class="form-group">
-                        <label for="company-name">Company Name</label>
-                        <input type="text" id="company-name" required 
-placeholder="Your corporate legal entity">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Corporate Email</label>
-                        <input type="email" id="email" required 
-placeholder="name@company.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="commodity">Target Commodity</label>
-                        <select id="commodity" required>
-                            <option value="" disabled selected>Select 
-required allocation...</option>
-                            <option value="poultry">Premium Poultry 
-Allocations</option>
-                            <option value="seafood">Deep-Sea Seafood 
-Logistics</option>
-                            <option value="caviar">Ultra-Premium Sturgeon 
-Caviar</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="volume">Required Volume & Target 
-Destination Port</label>
-                        <textarea id="volume" rows="4" required 
-placeholder="E.g., 50 MT / Month - CIF Port of Shanghai"></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">Submit Formal 
-Inquiry</button>
-                </form>
+               <form class="intake-form" action="https://formspree.io/f/xzdnpkok" method="POST">
+    <div class="form-group">
+        <label for="company-name">Company Name</label>
+        <input type="text" id="company-name" name="Company Name" required placeholder="Your corporate legal entity">
+    </div>
+    <div class="form-group">
+        <label for="email">Corporate Email</label>
+        <input type="email" id="email" name="email" required placeholder="name@company.com">
+    </div>
+    <div class="form-group">
+        <label for="commodity">Target Commodity</label>
+        <select id="commodity" name="commodity" required>
+            <option value="" disabled selected>Select required allocation...</option>
+            <option value="Premium Poultry">Premium Poultry Allocations</option>
+            <option value="Deep-Sea Seafood">Deep-Sea Seafood Logistics</option>
+            <option value="Ultra-Premium Sturgeon Caviar">Ultra-Premium Sturgeon Caviar</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="volume">Required Volume & Target Destination Port</label>
+        <textarea id="volume" name="volume" rows="4" required placeholder="E.g., 50 MT / Month - CIF Port of Shanghai"></textarea>
+    </div>
+    <button type="submit" class="btn-submit">Submit Formal Inquiry</button>
+</form>
             </div>
         </div>
     </section>
